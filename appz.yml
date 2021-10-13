@@ -1,7 +1,8 @@
 app:
-  code: SBW
-  name: Spring Boot Web
-  notify: bkoshy@ecloudcontrol.com
+  code: SBJ
+  name: Spring Boot web j11
+  notify: appzdev@cloudbourne.co
+  
 build:
   build_file: pom.xml
   env: DEV
@@ -10,16 +11,10 @@ build:
   version: 0.4
   
 deploy:
-  context: bibin-ecloudcontrol/DEV
+  context: alpha/DEV
   port: 8080
   replicas: 1
   
 properties:
-  title: Spring Boot Web - tuesday
-  MYSQL_DB_HOST: mysql-5-7
-  MYSQL_DB_NAME: springboot_web
-  MYSQL_DB_PORT: 3306
-  MYSQL_DB_USERNAME: springboot-web
-  MYSQL_SPRINGBOOTWEB_PASSWORD:
-    vault: MYSQL_SPRINGBOOTWEB_PASSWORD
+
   nano: 74
